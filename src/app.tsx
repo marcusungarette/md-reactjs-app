@@ -1,14 +1,15 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
+import { Sidebar } from './sidebar/sidebar'
 
-function App () {
+export function App () {
   return (
-    <Title>App</Title>
+    <Main>
+      <Sidebar />
+    </Main>
   )
 }
 
-const Title = styled.h1` ${({ theme }) => css`
-  background: ${theme.colors.gray};
-  color: ${theme.colors.primary};
-`}`
-
-export { App }
+const Main = styled.main`
+  display: flex;
+  height: 100vh;
+`
