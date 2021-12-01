@@ -1,7 +1,14 @@
+import styled, { css } from 'styled-components'
+
 function App () {
   return (
-    <h1>App</h1>
+    <Title>App</Title>
   )
 }
+
+const Title = styled.h1` ${({ theme }) => css`
+  background: ${theme.colors.gray};
+  color: ${theme.colors.primary};
+`}`
 
 export { App }
