@@ -44,3 +44,28 @@ export const H2 = styled.h2`${({ theme }) => css`
     z-index: 0;
   }
 `}`
+
+const DefaultButton = styled.button`
+  cursor: pointer;
+`
+
+export const Button = styled(DefaultButton)`${({ theme }) => css`
+  align-items: center;
+  background: ${theme.colors.primary};
+  border: 0;
+  border-radius: 4px;
+  color: ${theme.colors.lightBlack};
+  display: flex;
+  font-size: 1.4rem;
+  justify-content: center;
+  margin-bottom: 32px;
+  padding: 8px 0;
+  transition: background 0.15s ease-in-out;
+  width: 100%;
+  & svg {
+    margin-right: 12px;
+  }
+  &:hover {
+    background: ${theme.colors.primaryDark};
+  }
+`}`

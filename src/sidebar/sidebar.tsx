@@ -1,4 +1,5 @@
 import * as S from './sidebar-styles'
+import * as icon from 'ui/icons'
 import markeeLogo from './markee-logo.png'
 
 export function Sidebar () {
@@ -15,6 +16,10 @@ export function Sidebar () {
       <S.H2>
         <span>Arquivos</span>
       </S.H2>
+
+      <S.Button>
+        <icon.PlusDark /> Adicionar arquivo
+      </S.Button>
 
     </S.Aside>
   )
